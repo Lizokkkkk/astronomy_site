@@ -1,49 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>STARS</title>
+    <title>Web Page</title>
 </head>
-
 <body>
-    <div class="parallax">
-        <img src="img/background-space.jpg" id="img1">
-        <h1 id="header">stars</h1>
-        <p id="text">что о тебе расскажут звезды</p>
-        <img src="img/mountains.png" id="img2">
-    </div>
-
-    <div class="info">
-        <img src="img/Arrow.svg" id="arrow">
-        <img src="img/medium-star.svg" id="star1">
-        <img src="img/big-star.svg" id="star2">
-        <img src="img/small-star.svg" id="star3">
-        <img src="img/medium-star2.svg" id="star4">
-        <p>Посмотри, что твоя дата рождения может рассказать о тебе, твоем прошлом, настоящем и будущем, получи формулу
-            своей души и узнай, как на твою жизнь влияют твои планеты-покровители</p>
-    </div>
-
-    <div class="menu">
-        <form id="search_body" class="search_body" action="" method="get">
-            <input id="search_input" class="search_input" type="text" placeholder="Дата рождения" autocomplete="off">
-            <button id="search_btn1" type="button" class="search_btn">Гороскоп</button>
-            <button id="search_btn2" type="button" class="search_btn">Знак зодиака</button>
-            <button id="search_btn3" type="button" class="search_btn">Планеты</button>
-            <button id="search_btn4" type="button" class="search_btn">Формула души</button>
-            <button id="search_btn5" type="button" class="search_btn">Таро</button>
-        </form>
-    </div>
-
-    <footer>
-
-    </footer>
-
-    <script src="js/parallax.js"></script>
+    <h1>Web Page</h1>
+    <form action="/horoscope" method="get">
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" name="birthdate">
+        <input type="submit" value="Horoscope">
+    </form>
+    <form action="/zodiac_sign" method="get">
+        <input type="submit" value="Zodiac Sign">
+    </form>
+    <form action="/planets" method="get">
+        <input type="submit" value="Planets">
+    </form>
+    <form action="/soul" method="get">
+        <input type="submit" value="Soul Formula">
+    </form>
+    <form action="/taro" method="get">
+        <input type="submit" value="Tarot">
+    </form>
 </body>
-
 </html>
