@@ -1,0 +1,43 @@
+.info {
+    position: relative;
+    background: #000;
+    padding-top: 164px;
+    padding-left: 182px;
+    padding-right: 300px;
+    padding-bottom: 215px;
+    display: flex;
+    align-items: center;
+    & p {
+        font-family: 'Poiret One';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 50px #000000;
+    }
+}
+
+#arrow {
+    margin-right: 140px;
+}
+
+#star1 {
+    position: absolute;
+    left: 1098px;
+    top: 100px;
+}
+#star2 {
+    position: absolute;
+    left: 1210px;
+    top: 84px;
+}
+#star3 {
+    position: absolute;
+    left: 1279px;
+    top: 228px;
+}
+#star4 {
+    position: absolute;
+    left: 1220px;
+    top: 683px;
+}

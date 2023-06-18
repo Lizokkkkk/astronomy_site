@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#header {
+  position: absolute;
+  left: 127px;
+  top: 130px;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 50px #000000;
+}
+
+#text {
+  position: absolute;
+  left: 228px;
+  top: 368px;
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 50px #000000;
+}
+
+.info {
+  position: relative;
+  background: #000;
+  padding-top: 164px;
+  padding-left: 182px;
+  padding-right: 300px;
+  padding-bottom: 215px;
+  display: flex;
+  align-items: center;
+}
+.info p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 50px #000000;
+}
+
+#arrow {
+  margin-right: 140px;
+}
+
+#star1 {
+  position: absolute;
+  left: 1098px;
+  top: 100px;
+}
+
+#star2 {
+  position: absolute;
+  left: 1210px;
+  top: 84px;
+}
+
+#star3 {
+  position: absolute;
+  left: 1279px;
+  top: 228px;
+}
+
+#star4 {
+  position: absolute;
+  left: 1220px;
+  top: 683px;
+}
+
+.menu {
+  position: relative;
+  background: #000;
+}/*# sourceMappingURL=style.css.map */
