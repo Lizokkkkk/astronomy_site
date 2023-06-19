@@ -36,7 +36,10 @@ def divination_by_tarot():
             name = obj['name']
             positions = ['direct position', 'inverted position']
             position = random.choice(positions)
-            month_objects[name] = position, obj[f'{position}']
+            if position == 'direct position':
+                month_objects[name] = obj[f'{position}'], 'direct img'
+            else:
+                month_objects[name] = obj[f'{position}'], 'inverted img'
 
         # Присвоение словаря month_objects соответствующему месяцу
         tarot_by_month[month_number] = month_objects
