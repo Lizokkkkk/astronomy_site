@@ -1,0 +1,14 @@
+footer {
+    position: relative;
+    background-color: #000000;
+    padding: 49px 83px;
+    box-shadow: 0px 0px 58px #350E86;
+    & p {
+        font-family: 'Poiret One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

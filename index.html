@@ -29,21 +29,27 @@
     </div>
 
     <div class="menu">
+        <img src="src/img/small-star.svg" id="star5">
+        <img src="src/img/medium-star.svg" id="star6">
         <form id="search_body" class="search_body" action="" method="get">
-            <input id="search_input" class="search_input" type="text" placeholder="Дата рождения" autocomplete="off">
-            <button id="search_btn1" type="button" class="search_btn">Гороскоп</button>
-            <button id="search_btn2" type="button" class="search_btn">Знак зодиака</button>
-            <button id="search_btn3" type="button" class="search_btn">Планеты</button>
-            <button id="search_btn4" type="button" class="search_btn">Формула души</button>
-            <button id="search_btn5" type="button" class="search_btn">Таро</button>
+            <input id="search_input" class="search_input" placeholder="Дата рождения" autocomplete="off" required="" type="text" onfocus="(this.type='date')">
+            <div class="buttons">
+                <button id="search_btn1" type="button" class="search_btn">Гороскоп</button>
+                <button id="search_btn2" type="button" class="search_btn">Знак зодиака</button>
+                <button id="search_btn3" type="button" class="search_btn">Планеты</button>
+                <button id="search_btn4" type="button" class="search_btn">Нумерология</button>
+                <button id="search_btn5" type="button" class="search_btn">Таро</button>
+            </div>
         </form>
     </div>
 
     <footer>
-
+        <p>Внимание! Если вы впечатлительный человек, мы не советуем вам это читать. Также мы просим вас не воспринимать
+            всю полученную здесь информацию близко к сердцу. Берегите себя!</p>
     </footer>
 
     <script src="src/js/parallax.js"></script>
+    <script src="src/js/search.js"></script>
 </body>
 
 </html>
