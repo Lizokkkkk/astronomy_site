@@ -1,0 +1,38 @@
+.famous_sign h2 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  margin-top: 82px;
+  margin-left: 138px;
+}
+.famous_sign p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+  margin-top: 104px;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-bottom: 162px;
+}
+
+#star1 {
+  position: absolute;
+  left: 1109px;
+  top: 1470px;
+}
+
+#star2 {
+  position: absolute;
+  left: 1216px;
+  top: 1501px;
+}
+
+#star3 {
+  position: absolute;
+  left: 91px;
+  top: 1972px;
+}/*# sourceMappingURL=famous_sign.css.map */

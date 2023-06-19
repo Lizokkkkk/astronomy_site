@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+header {
+  padding-top: 94px;
+  padding-left: 138px;
+  padding-bottom: 152px;
+  display: flex;
+  align-items: center;
+}
+header img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 250px #350E86;
+}
+
+.sign_header {
+  margin-right: 186px;
+}
+.sign_header h1 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 150px;
+  color: #FFFFFF;
+}
+.sign_header p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  margin-left: 67px;
+}
+
+.about_sign {
+  height: 810px;
+  position: relative;
+  box-shadow: inset 0px 0px 84px 65px #000000;
+  background: url(../img/background.png) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 0 61px 0 99px;
+}
+.about_sign p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #000000;
+  background-color: transparent;
+}
+
+#constellation_img {
+  background-color: transparent;
+  width: 473px;
+  height: auto;
+  margin-right: 52px;
+}
+
+.famous_sign h2 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  margin-top: 82px;
+  margin-left: 138px;
+}
+.famous_sign p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+  margin-top: 104px;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-bottom: 162px;
+}
+
+#star1 {
+  position: absolute;
+  left: 1109px;
+  top: 1470px;
+}
+
+#star2 {
+  position: absolute;
+  left: 1216px;
+  top: 1501px;
+}
+
+#star3 {
+  position: absolute;
+  left: 91px;
+  top: 1972px;
+}/*# sourceMappingURL=sign.css.map */
