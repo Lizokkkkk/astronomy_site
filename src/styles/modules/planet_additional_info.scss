@@ -1,0 +1,16 @@
+.additional_info {
+    width: 1246px;
+    height: auto;
+    border: 3px solid #350E86;
+    border-radius: 179px;
+    margin: 0 97px 123px 97px;
+    & p {
+        font-family: 'Poiret One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 35px 80px;
+    }
+}

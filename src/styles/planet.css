@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  padding-top: 92px;
+  padding-left: 158px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 121px;
+}
+
+#planet_img {
+  width: 328px;
+  height: 583px;
+  margin-right: 127px;
+  border-radius: 20px;
+}
+
+.planet_info h1 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 150px;
+  color: #FFFFFF;
+  margin-left: 66px;
+  margin-bottom: 50px;
+}
+.planet_info p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+#star1 {
+  position: absolute;
+  top: 675px;
+  left: 1206px;
+}
+
+#star2 {
+  position: absolute;
+  top: 795px;
+  left: 1309px;
+}
+
+#star3 {
+  position: absolute;
+  top: 1008px;
+  left: 183px;
+}
+
+#star4 {
+  position: absolute;
+  top: 1450px;
+  left: 1287px;
+}
+
+.main_info {
+  padding: 0 322px;
+  margin-bottom: 166px;
+}
+.main_info li {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.additional_info {
+  width: 1246px;
+  height: auto;
+  border: 3px solid #350E86;
+  border-radius: 179px;
+  margin: 0 97px 123px 97px;
+}
+.additional_info p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 35px 80px;
+}/*# sourceMappingURL=planet.css.map */

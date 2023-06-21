@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  padding-top: 92px;
+  padding-left: 158px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 121px;
+}
+
+#planet_img {
+  width: 328px;
+  height: 583px;
+  margin-right: 127px;
+  border-radius: 20px;
+}
+
+.planet_info h1 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 150px;
+  color: #FFFFFF;
+  margin-left: 66px;
+  margin-bottom: 50px;
+}
+.planet_info p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=planet_header.css.map */
