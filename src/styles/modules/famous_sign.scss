@@ -1,11 +1,13 @@
 .famous_sign {
+    padding-bottom: 162px;
+    padding-top: 82px;
     & h2 {
         font-family: 'Poiret One';
         font-weight: 400;
         font-size: 64px;
         line-height: 75px;
         color: #FFFFFF;
-        margin-top: 82px;
+        margin-bottom: 104px;
         margin-left: 138px;
     }
     & p {
@@ -14,10 +16,9 @@
         font-size: 32px;
         line-height: 37px;
         color: #FFFFFF;
-        margin-top: 104px;
+        
         margin-left: 210px;
         margin-right: 210px;
-        margin-bottom: 162px;
     }
 }
 
