@@ -55,7 +55,7 @@ btn_sign.addEventListener("click", () => {
                 sign = 'Лев';
             break;
         case 8:
-            if (day <= 23)
+            if (day <= 22)
                 sign = 'Лев';
             else
                 sign = 'Дева';
@@ -136,7 +136,7 @@ btn_planet.addEventListener("click", () => {
                 sign = 'Лев';
             break;
         case 8:
-            if (day <= 23)
+            if (day <= 22)
                 sign = 'Лев';
             else
                 sign = 'Дева';
