@@ -95,76 +95,76 @@ btn_planet.addEventListener("click", () => {
     switch (month) {
         case 1:
             if (day <= 20)
-                planet = 'Сатурн';
+                sign = 'Козерог';
             else
-                planet = 'Уран';
+                sign = 'Водолей';
             break;
         case 2:
             if (day <= 18)
-                planet = 'Уран';
+                sign = 'Водолей';
             else
-                planet = 'Плутон';
+                sign = 'Рыбы';
             break;
         case 3:
             if (day <= 20)
-                planet = 'Плутон';
+                sign = 'Рыбы';
             else
-                planet = 'Марс';
+                sign = 'Овен';
             break;
         case 4:
             if (day <= 20)
-                planet = 'Марс';
+                sign = 'Овен';
             else
-                planet = 'Венера';
+                sign = 'Телец';
             break;
         case 5:
             if (day <= 20)
-                planet = 'Венера';
+                sign = 'Телец';
             else
-                planet = 'Меркурий';
+                sign = 'Близнецы';
             break;
         case 6:
             if (day <= 21)
-                planet = 'Меркурий';
+                sign = 'Близнецы';
             else
-                planet = 'Луна';
+                sign = 'Рак';
             break;
         case 7:
             if (day <= 22)
-                planet = 'Луна';
+                sign = 'Рак';
             else
-                planet = 'Солнце';
+                sign = 'Лев';
             break;
         case 8:
             if (day <= 23)
-                planet = 'Солнце';
+                sign = 'Лев';
             else
-                planet = 'Нептун';
+                sign = 'Дева';
             break;
         case 9:
             if (day <= 23)
-                planet = 'Нептун';
+                sign = 'Дева';
             else
-                planet = 'Венера';
+                sign = 'Весы';
             break;
         case 10:
             if (day <= 23)
-                planet = 'Венера';
+                sign = 'Весы';
             else
-                planet = 'Плутон';
+                sign = 'Скорпион';
             break;
         case 11:
             if (day <= 22)
-                planet = 'Плутон';
+                sign = 'Скорпион';
             else
-                planet = 'Юпитер';
+                sign = 'Стрелец';
             break;
         case 12:
             if (day <= 21)
-                planet = 'Юпитер';
+                sign = 'Стрелец';
             else
-                planet = 'Сатурн';
+                sign = 'Козерог';
             break;
     }
-    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/planet.html?planet=${planet}`;
+    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/planet.html?sign=${sign}`;
 });

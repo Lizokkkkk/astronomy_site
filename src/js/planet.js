@@ -11,7 +11,7 @@ fetch("../planets.json")
   })
   .then((data) => {
     data.forEach(line => {
-        if (line.planet == header.get("planet")) {
+        if (line.sign == header.get("sign")) {
             planet_img.src = `${line.img}`;
             planet_name.innerHTML = `${line.planet}`;
             info.innerHTML = `${line.info}`;
