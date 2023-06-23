@@ -85,7 +85,7 @@ btn_sign.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `https://lizokkkkk.github.io/astronomy_site//src/html/sign.html?sign=${sign}`;
+    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/sign.html?sign=${sign}`;
 });
 
 btn_planet.addEventListener("click", () => {
