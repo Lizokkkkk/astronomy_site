@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  padding: 0 61px 0 99px;
+  padding: 0 60px 0 80px;
 }
 .about_sign p {
   font-family: "Poiret One";
@@ -21,7 +21,7 @@
 
 #constellation_img {
   background-color: transparent;
-  width: 473px;
+  width: 350px;
   height: auto;
-  margin-right: 52px;
+  margin-right: 60px;
 }/*# sourceMappingURL=about_sign.css.map */

@@ -85,7 +85,7 @@ btn_sign.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `http://lizokkkkk.github.io/astronomy_site/src/html/sign.html?sign=${sign}`;
+    location.href = `http://github.com/Lizokkkkk/astronomy_site/src/html/sign.html?sign=${sign}`;
 });
 
 btn_planet.addEventListener("click", () => {
@@ -166,5 +166,5 @@ btn_planet.addEventListener("click", () => {
                 planet = 'Сатурн';
             break;
     }
-    location.href = `http://lizokkkkk.github.io/astronomy_site/src/html/planet.html?planet=${planet}`;
+    location.href = `http://github.com/Lizokkkkk/astronomy_site/src/html/planet.html?planet=${planet}`;
 });
