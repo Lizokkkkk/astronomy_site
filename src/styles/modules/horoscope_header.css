@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+header {
+  padding: 107px 0 115px 0;
+  display: grid;
+  justify-items: center;
+  row-gap: 37px;
+}
+header p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFFFFF;
+}
+header h1 {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 150px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#star1 {
+  position: absolute;
+  left: 183px;
+  top: 107px;
+}
+
+#star2 {
+  position: absolute;
+  left: 97px;
+  top: 208px;
+}
+
+#star3 {
+  position: absolute;
+  left: 1207px;
+  top: 342px;
+}/*# sourceMappingURL=horoscope_header.css.map */
