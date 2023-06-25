@@ -135,10 +135,4 @@ header h1 {
 }
 .input1:focus {
   outline: none;
-}
-
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
 }/*# sourceMappingURL=horoscope.css.map */
