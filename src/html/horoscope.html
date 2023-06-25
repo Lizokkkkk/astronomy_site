@@ -41,10 +41,13 @@
         <div class="horoscope_form">
             <p>Подпишись на нашу рассылку и будь в курсе актульных госкопов каждый месяц</p>
             <form action="">
-                <input type="text" placeholder="ваше имя и фамилия" autocomplete="off">
-                <input type="text" placeholder="дата рождения" autocomplete="off" required onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
-                <input type="text" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
-                <button type="submit">Отправить</button>
+                <div class="name_input">
+                    <input class="input1" type="text" placeholder="имя" autocomplete="off">
+                    <input class="input1" type="text" placeholder="фамилия" autocomplete="off">
+                </div>
+                <input class="input2" type="text" placeholder="дата рождения (дд.мм)" autocomplete="off">
+                <input class="input2" type="text" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
+                <button class="input2" type="submit">Отправить</button>
             </form>
         </div>
     </main>

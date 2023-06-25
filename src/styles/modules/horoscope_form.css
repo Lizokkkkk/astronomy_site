@@ -11,23 +11,6 @@
   justify-items: center;
   row-gap: 36px;
 }
-.horoscope_form form input {
-  width: 560px;
-  height: 72px;
-  background: #FFFFFF;
-  border-radius: 65px;
-  font-family: "Poiret One";
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: center;
-  color: #000000;
-  border: none;
-  cursor: pointer;
-}
-.horoscope_form form input:focus {
-  outline: none;
-}
 .horoscope_form form button {
   width: 314px;
   height: 60px;
@@ -42,6 +25,49 @@
   color: #FFFFFF;
   margin-top: 16px;
   margin-bottom: 76px;
+}
+
+.input2 {
+  width: 560px;
+  height: 72px;
+  background: #FFFFFF;
+  border-radius: 65px;
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.input2:focus {
+  outline: none;
+}
+
+.name_input {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.input1 {
+  width: 320px;
+  height: 72px;
+  background: #FFFFFF;
+  border-radius: 65px;
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.input1:focus {
+  outline: none;
 }
 
 input[type=date]::-webkit-inner-spin-button,
