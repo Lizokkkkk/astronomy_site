@@ -14,8 +14,8 @@
         <img src="../img/small-star.svg" id="star1">
         <img src="../img/medium-star.svg" id="star2">
         <img src="../img/medium-star2.svg" id="star3">
-        <p>Гороскоп для близнецов на</p>
-        <h1>ИЮНЬ</h1>
+        <p id="sign_horoscope">Гороскоп для </p>
+        <h1 id="month_horoscope"></h1>
     </header>
 
     <main>
@@ -41,13 +41,15 @@
         <div class="horoscope_form">
             <p>Подпишись на нашу рассылку и будь в курсе актульных госкопов каждый месяц</p>
             <form action="">
-                <input type="text" placeholder="ваше имя и фамилия">
-                <input type="text" placeholder="дата рождения">
-                <input type="text" placeholder="id вк (цифрами)">
+                <input type="text" placeholder="ваше имя и фамилия" autocomplete="off">
+                <input type="text" placeholder="дата рождения" autocomplete="off" required onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                <input type="text" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
                 <button type="submit">Отправить</button>
             </form>
         </div>
     </main>
+
+    <script src="../js/horoscope.js"></script>
 
 </body>
 

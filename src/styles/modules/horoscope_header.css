@@ -25,6 +25,7 @@ header h1 {
   line-height: 150px;
   text-align: center;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 #star1 {

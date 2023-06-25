@@ -42,4 +42,10 @@
   color: #FFFFFF;
   margin-top: 16px;
   margin-bottom: 76px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }/*# sourceMappingURL=horoscope_form.css.map */
