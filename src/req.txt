@@ -1,0 +1,4 @@
+flask
+social_spam
+schedule
+psycopg2
