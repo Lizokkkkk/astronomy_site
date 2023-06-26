@@ -40,15 +40,21 @@
 
         <div class="horoscope_form">
             <p>Подпишись на нашу рассылку и будь в курсе актульных госкопов каждый месяц</p>
-            <form action="">
+            <form action="" method="post">
                 <div class="name_input">
-                    <input class="input1" type="text" value="first_name" name="first_name" placeholder="имя" autocomplete="off">
-                    <input class="input1" type="text" value="surname" name="surname" placeholder="фамилия" autocomplete="off">
+                    <input class="input1" type="text" name="first_name" placeholder="имя" autocomplete="off">
+                    <input class="input1" type="text" name="surname" placeholder="фамилия" autocomplete="off">
                 </div>
-                <input class="input2" type="text" value="date" name="date" placeholder="дата рождения (дд.мм)" autocomplete="off">
-                <input class="input2" type="text" value="id" name="id" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
+                <input class="input2" type="text" name="date" placeholder="дата рождения (дд.мм)" autocomplete="off">
+                <input class="input2" type="text" name="vk_id" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
                 <button class="input2" type="submit">Отправить</button>
             </form>
+                    {% if error %}
+	            <p style="color:red">{{ error }}</p>
+	        {% endif %}
+                    {% if confirmation %}
+	            <p style="color:blue">{{ confirmation }}</p>
+	        {% endif %}
         </div>
     </main>
 
