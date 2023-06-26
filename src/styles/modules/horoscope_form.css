@@ -1,9 +1,28 @@
-.horoscope_form p {
+.input1, .input2 {
+  background: #FFFFFF;
+  border-radius: 65px;
   font-family: "Poiret One";
   font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.input1:focus, .input2:focus {
+  outline: none;
+}
+
+.horoscope_form form button, .horoscope_form p {
+  font-family: "Poiret One";
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.horoscope_form p {
   font-size: 64px;
   line-height: 75px;
-  color: #FFFFFF;
   margin: 115px 230px 90px 115px;
 }
 .horoscope_form form {
@@ -17,12 +36,9 @@
   background: #350E86;
   border: 3px solid #350E86;
   border-radius: 65px;
-  font-family: "Poiret One";
-  font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   text-align: center;
-  color: #FFFFFF;
   margin-top: 16px;
   margin-bottom: 76px;
 }
@@ -30,19 +46,6 @@
 .input2 {
   width: 560px;
   height: 72px;
-  background: #FFFFFF;
-  border-radius: 65px;
-  font-family: "Poiret One";
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: center;
-  color: #000000;
-  border: none;
-  cursor: pointer;
-}
-.input2:focus {
-  outline: none;
 }
 
 .name_input {
@@ -55,17 +58,4 @@
 .input1 {
   width: 320px;
   height: 72px;
-  background: #FFFFFF;
-  border-radius: 65px;
-  font-family: "Poiret One";
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: center;
-  color: #000000;
-  border: none;
-  cursor: pointer;
-}
-.input1:focus {
-  outline: none;
 }/*# sourceMappingURL=horoscope_form.css.map */

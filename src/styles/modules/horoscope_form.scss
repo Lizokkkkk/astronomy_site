@@ -1,37 +1,4 @@
-.horoscope_form {
-    & p {
-        font-family: 'Poiret One';
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 75px;
-        color: #FFFFFF;
-        margin: 115px 230px 90px 115px;
-    }
-    & form {
-        display: grid;
-        justify-items: center;
-        row-gap: 36px;
-        & button {
-            width: 314px;
-            height: 60px;
-            background: #350E86;
-            border: 3px solid #350E86;
-            border-radius: 65px;
-            font-family: 'Poiret One';
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 47px;
-            text-align: center;
-            color: #FFFFFF;
-            margin-top: 16px;
-            margin-bottom: 76px;
-        }
-    }
-}
-
-.input2 {
-    width: 560px;
-    height: 72px;
+%btn_style {
     background: #FFFFFF;
     border-radius: 65px;
     font-family: 'Poiret One';
@@ -45,6 +12,45 @@
     &:focus {
         outline: none;
     }
+}
+
+%text_style {
+    font-family: 'Poiret One';
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.horoscope_form {
+    & p {
+        font-size: 64px;
+        line-height: 75px;
+        margin: 115px 230px 90px 115px;
+        @extend %text_style;
+    }
+    & form {
+        display: grid;
+        justify-items: center;
+        row-gap: 36px;
+        & button {
+            @extend %text_style;
+            width: 314px;
+            height: 60px;
+            background: #350E86;
+            border: 3px solid #350E86;
+            border-radius: 65px;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            margin-top: 16px;
+            margin-bottom: 76px;
+        }
+    }
+}
+
+.input2 {
+    width: 560px;
+    height: 72px;
+    @extend %btn_style;
 }
 
 .name_input {
@@ -56,17 +62,5 @@
 .input1 {
     width: 320px;
     height: 72px;
-    background: #FFFFFF;
-    border-radius: 65px;
-    font-family: 'Poiret One';
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-    &:focus {
-        outline: none;
-    }
+    @extend %btn_style;
 }
