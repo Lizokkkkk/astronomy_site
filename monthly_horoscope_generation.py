@@ -107,7 +107,7 @@ def horoscope():
     second_sent = new_horoscope[1] + '.'
     third_sent = new_horoscope[2] + '.'
     fourth_sent = new_horoscope[3] + '.'
-    return render_template('horoscope.html', zodiac_sign=zodiac_sign, first_sent=first_sent, second_sent=second_sent,
+    return render_template('src/html/horoscope.html', zodiac_sign=zodiac_sign, first=first_sent, second_sent=second_sent,
                            third_sent=third_sent, fourth_sent=fourth_sent)
 
 

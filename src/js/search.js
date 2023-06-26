@@ -83,7 +83,7 @@ btn_horoscope.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/horoscope.html?sign=${sign}`;
+    location.href = `http://127.0.0.1:5501/src/html/horoscope.html?sign=${sign}`;
 });
 
 btn_sign.addEventListener("click", () => {
