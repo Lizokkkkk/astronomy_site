@@ -22,18 +22,15 @@
         <div class="horoscope_text">
             <div>
                 <p>
-                    Лучшее время для того, чтобы начать новые отношения или разобраться со старыми.
+                    {{ first }}
                 </p>
                 <br><br>
                 <p>
-                    Помните, что мысли материальны, а значит вам в течение дня нужно постоянно думать про отношения с
-                    друзьями и
-                    близкими.
+                    {{ second }}
                 </p>
                 <br><br>
                 <p>
-                    Если встретите незнакомца на пути — проявите участие, и тогда эта встреча посулит вам приятные
-                    хлопоты.
+                    {{ third }}
                 </p>
             </div>
         </div>
@@ -46,7 +43,11 @@
                     <input class="input1" type="text" name="surname" placeholder="фамилия" autocomplete="off">
                 </div>
                 <input class="input2" type="text" name="date" placeholder="дата рождения (дд.мм)" autocomplete="off">
+<<<<<<< HEAD:src/templates/horoscope.html
                 <input class="input2" type="text" name="vk_id" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
+=======
+                <input class="input2" type="text" name="id" placeholder="id вк (цифрами)" autocomplete="off" maxlength="9">
+>>>>>>> aab15412b0da4003b12abf2f982ab623234d5ed0:src/html/horoscope.html
                 <button class="input2" type="submit">Отправить</button>
             </form>
                     {% if error %}
