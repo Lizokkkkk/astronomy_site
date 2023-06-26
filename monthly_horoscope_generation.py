@@ -104,11 +104,18 @@ def horoscope():
     new_horoscope = horoscope.split('.')
     print(f"Ваш знак зодиака: {zodiac_sign}")
     first_sent = new_horoscope[0] + '.'
+<<<<<<< HEAD
     second_sent = new_horoscope[1] + '.'
     third_sent = new_horoscope[2] + '.'
     fourth_sent = new_horoscope[3] + '.'
     return render_template('src/html/horoscope.html', zodiac_sign=zodiac_sign, first=first_sent, second_sent=second_sent,
                            third_sent=third_sent, fourth_sent=fourth_sent)
+=======
+    second_sent = new_horoscope[1] + new_horoscope[2] + '.'
+    third_sent = new_horoscope[3] + '.'
+    return render_template('horoscope.html', first=first_sent, second=second_sent,
+                           third=third_sent)
+>>>>>>> e2b658e679a7a1759f5065323e694cd3912eacef
 
 
 if __name__ == '__main__':
