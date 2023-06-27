@@ -8,7 +8,7 @@ const header = new URL(document.location).searchParams,
   women = document.getElementById("famous_women"),
   men = document.getElementById("famous_men");
 
-fetch("../signs.json")
+fetch('/static/json/signs.json')
   .then((response) => {
     return response.json();
   })

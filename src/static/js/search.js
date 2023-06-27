@@ -83,7 +83,7 @@ btn_horoscope.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `http://127.0.0.1:5501/src/html/horoscope.html?sign=${sign}`;
+    location.href += `horoscope/?sign=${sign}`
 });
 
 btn_sign.addEventListener("click", () => {
@@ -164,7 +164,7 @@ btn_sign.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/sign.html?sign=${sign}`;
+    location.href += `sign/?sign=${sign}`
 });
 
 btn_planet.addEventListener("click", () => {
@@ -245,6 +245,5 @@ btn_planet.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/planet.html?sign=${sign}`;
+    location.href += `planet/?sign=${sign}`
 });
-

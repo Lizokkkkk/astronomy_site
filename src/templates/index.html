@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"  href="static/styles/style.css">
+    <title>STARS</title>
+</head>
+
+<body>
+    <div class="parallax">
+        <img src="static/img/background-space.jpg" id="img1">
+        <h1 id="header">stars</h1>
+        <p id="text">что о тебе расскажут звезды</p>
+        <img src="static/img/mountains.png" id="img2">
+    </div>
+
+    <div class="info">
+        <img src="static/img/Arrow.svg" id="arrow">
+        <img src="static/img/medium-star.svg" id="star1">
+        <img src="static/img/big-star.svg" id="star2">
+        <img src="static/img/small-star.svg" id="star3">
+        <img src="static/img/medium-star2.svg" id="star4">
+        <p>Посмотри, что твоя дата рождения может рассказать о тебе, твоем прошлом, настоящем и будущем, узнай, как на
+            твою жизнь влияют твои планеты-покровители, и что тебе сулять карты Таро</p>
+    </div>
+
+    <div class="menu">
+        <img src="static/img/small-star.svg" id="star5">
+        <img src="static/img/medium-star.svg" id="star6">
+        <form id="search_body" class="search_body" action="" method="get">
+            <input id="search_input" class="search_input" placeholder="Дата рождения" autocomplete="off" required="" type="text" onfocus="(this.type='date')">
+            <div class="buttons">
+                <button id="search_btn1" type="button" class="search_btn">Гороскоп</button>
+                <button id="search_btn2" type="button" class="search_btn">Знак зодиака</button>
+                <button id="search_btn3" type="button" class="search_btn">Планеты</button>
+                <button id="search_btn4" type="button" class="search_btn">Нумерология</button>
+                <button id="search_btn5" type="button" class="search_btn">Таро</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Внимание! Если вы впечатлительный человек, мы не советуем вам это читать. Также мы просим вас не воспринимать
+            всю полученную здесь информацию близко к сердцу. Берегите себя!</p>
+    </footer>
+
+    <!-- <script src="static/js/parallax.js"></script> -->
+    <script src="static/js/search.js"></script>
+</body>
+
+</html>
