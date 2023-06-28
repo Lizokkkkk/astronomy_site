@@ -1,9 +1,6 @@
 import datetime
 import random
-from flask import Flask, render_template, request
-from urllib.parse import urlparse, parse_qs
 
-app = Flask(__name__)
 
 # Списки предложений для каждой части гороскопа
 first = ["Сегодня — идеальный день для новых начинаний.",
@@ -85,43 +82,20 @@ def get_horoscope(zodiac_sign):
 
     return horoscope
 
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-@app.route('/sign/')
-def sign():
-    sign = request.args.get('sign')
-    return render_template("sign.html")
-
-@app.route('/planet/')
-def planet():
-    sign = request.args.get('sign')
-    return render_template("planet.html")
-
-# Основная функция
-@app.route('/horoscope/')
-def horoscope():
-    current_month = datetime.datetime.now().strftime("%B")
-    if not zodiac_signs[current_month]["signs"] or not zodiac_signs[current_month]["horoscopes"]:
-        update_zodiac_signs()
-
-    # Получение значения параметра 'sign' из запроса
-    zodiac_sign = request.args.get('sign')
-
-    if zodiac_sign is None:
-        # Здесь можно вернуть ошибку или предоставить значение по умолчанию
-        return "Знак зодиака не указан"
-
-    horoscope = get_horoscope(zodiac_sign)
-    new_horoscope = horoscope.split('.')
-    # print(f"Ваш знак зодиака: {zodiac_sign}")
-    first_sent = new_horoscope[0] + '.'
-    second_sent = new_horoscope[1] + new_horoscope[2] + '.'
-    third_sent = new_horoscope[3] + '.'
-    return render_template('horoscope.html', first=first_sent, second=second_sent,
-                           third=third_sent)
-
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8000, debug=True)
+    sign = input("Введите знак зодиака: ")
+    horoscope_output = get_horoscope(sign)
+    with open('horoscope.html', 'w') as file:
+        file.write(horoscope_output)
+
+
+# @app.route('/sign/')
+# def sign():
+#     sign = request.args.get('sign')
+#     return render_template("sign.html")
+#
+# @app.route('/planet/')
+# def planet():
+#     sign = request.args.get('sign')
+#     return render_template("planet.html")
