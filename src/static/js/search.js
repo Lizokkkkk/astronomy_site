@@ -247,3 +247,7 @@ btn_planet.addEventListener("click", () => {
     }
     location.href += `planet/?sign=${sign}`
 });
+
+btn_tarot.addEventListener("click", () => {
+    location.href += `tarot/`
+});

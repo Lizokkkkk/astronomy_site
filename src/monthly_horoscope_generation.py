@@ -99,6 +99,11 @@ def planet():
     sign = request.args.get('sign')
     return render_template("planet.html")
 
+@app.route('/tarot/')
+def tarot():
+    sign = request.args.get('sign')
+    return render_template("tarot.html")
+
 # Основная функция
 @app.route('/horoscope/')
 def horoscope():

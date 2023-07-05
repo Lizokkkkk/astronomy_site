@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+#deck_of_cards {
+    position: absolute;
+    z-index: 2;
+    left: -125px;
+    top: -1472px;
+    background: transparent;
+    animation: rotation 1.5s  linear, slide-out-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 0s, 1s;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slide-out-top {
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+}
+
+.tarot {
+    position: relative;
+    margin-top: 100px;
+    margin: 100px 115px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 66px;
+    justify-items: center;
+    & h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 48px;
+        font-family: Poiret One;
+        font-weight: 400;
+        margin-bottom: 28px;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-delay: 2s;
+    }
+    & p {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-family: Poiret One;
+        font-weight: 400;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-delay: 2s;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.card {
+    width: 213px;
+    height: 360px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1.3s;
+}
+
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
