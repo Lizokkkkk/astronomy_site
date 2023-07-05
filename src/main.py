@@ -28,5 +28,16 @@ def tarot():
     return render_template("tarot.html", tarot_output=tarot_output)
 
 
+@app.route('/sign/')
+def sign():
+    sign = request.args.get('sign')
+    return render_template("sign.html")
+
+
+@app.route('/planet/')
+def planet():
+    sign = request.args.get('sign')
+    return render_template("planet.html")
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)
