@@ -5,12 +5,12 @@ import divination_by_tarot_by_month
 app = Flask(__name__)
 
 
-# @app.route('/')
-# def index():
-#     return render_template("index.html")
+@app.route('/')
+def index():
+    return render_template("index.html")
 
 
-# @app.route('/horoscope/')
+@app.route('/horoscope/')
 def horoscope():
     sign = request.args.get('sign')
     horoscope_output = get_horoscope(sign)
@@ -21,7 +21,7 @@ def horoscope():
     return render_template("horoscope.html", first=first, second=second, third=third)
 
 
-# @app.route('/tarot/')
+@app.route('/tarot/')
 def tarot():
     sign = request.args.get('sign')
     tarot_output = divination_by_tarot_by_month.get_tarot(sign)
