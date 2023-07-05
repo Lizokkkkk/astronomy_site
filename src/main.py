@@ -39,5 +39,6 @@ def planet():
     sign = request.args.get('sign')
     return render_template("planet.html")
 
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)
