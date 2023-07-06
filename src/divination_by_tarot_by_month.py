@@ -4,7 +4,7 @@ import random   # ПРОГРАММА ВЫДАЕТ ПРОГНОЗ ПО НОМЕР
 
 def divination_by_tarot():
     # Чтение данных из файла tarot.json
-    with open('tarot.json') as file:
+    with open('src/static/json/tarot.json') as file:
         data = json.load(file)
 
     # Создание словаря tarot_by_month
