@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from monthly_horoscope_generation import *
-import divination_by_tarot_by_month
+# import divination_by_tarot_by_month
 
 app = Flask(__name__)
 
@@ -18,8 +18,8 @@ def horoscope():
     horoscope_output = get_horoscope(sign)
     forecast = horoscope_output.split('.')
     first = forecast[0] + '.'
-    second = forecast[1] + '.'
-    third = forecast[2] + '.'
+    second = forecast[1] + forecast[2] + '.'
+    third = forecast[3] + '.'
     return render_template("horoscope.html", first=first, second=second, third=third)
 
 @app.route('/sign/')
@@ -35,8 +35,8 @@ def planet():
 @app.route('/tarot/')
 def tarot():
     sign = request.args.get('sign')
-    tarot_output = divination_by_tarot_by_month.get_tarot(sign)
-    return render_template("tarot.html", tarot_output=tarot_output)
+    # tarot_output = divination_by_tarot_by_month.get_tarot(sign)
+    return render_template("tarot.html")
 
 
 if __name__ == '__main__':

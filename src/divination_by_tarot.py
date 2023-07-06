@@ -47,4 +47,4 @@ def divination_by_tarot():
             print(f"  {name}: {position}")
 
 
-divination_by_tarot()
+# divination_by_tarot()
