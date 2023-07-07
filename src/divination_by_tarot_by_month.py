@@ -22,7 +22,7 @@ def generate_tarot_predictions():
     tarot_file_path = os.path.join(current_directory, 'static', 'json', 'tarot.json')
 
     # Читаем данные из файла tarot.json
-    with open(tarot_file_path) as file:
+    with open(tarot_file_path, encoding="utf8") as file:
         data = json.load(file)
 
     # Генерируем три случайные карты
@@ -57,7 +57,7 @@ def divination_by_tarot(sign):
     tarot_file_path = os.path.join(current_directory, 'static', 'json', 'tarot.json')
 
     # Читаем данные из файла tarot.json
-    with open(tarot_file_path) as file:
+    with open(tarot_file_path, encoding="utf8") as file:
         data = json.load(file)
 
     # Словарь, хранящий предсказания таро для каждого знака зодиака
