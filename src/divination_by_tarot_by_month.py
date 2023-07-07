@@ -43,7 +43,7 @@ def generate_tarot_predictions():
             })
         else:
             tarot_predictions.append({
-                'image': obj['inverted img'],
+                'image': obj['direct img'],
                 'name': name,
                 'interpretation': obj[f'{position}']
             })
