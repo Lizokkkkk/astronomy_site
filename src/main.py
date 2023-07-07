@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 from monthly_horoscope_generation import *
 from divination_by_tarot_by_month import *
-import datetime
 
 app = Flask(__name__)
 
