@@ -3,6 +3,7 @@ import random
 import datetime
 import os
 
+
 def update_tarot_predictions(tarot_dict):
     # Проверяем, когда были последние обновления
     today = datetime.date.today()
@@ -13,6 +14,7 @@ def update_tarot_predictions(tarot_dict):
             updated_predictions = generate_tarot_predictions()
             predictions['cards'] = updated_predictions
             predictions['updated_date'] = today
+
 
 def generate_tarot_predictions():
     # Определяем путь к файлу tarot.json
@@ -47,6 +49,7 @@ def generate_tarot_predictions():
             })
 
     return tarot_predictions
+
 
 def divination_by_tarot(sign):
     # Определяем путь к файлу tarot.json
