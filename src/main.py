@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request
 from monthly_horoscope_generation import *
-from divination_by_tarot_by_month import *
+from divination_by_tarot_by_month import divination_by_tarot, update_tarot_predictions
 import datetime
 
 app = Flask(__name__)
+
+# Переменная для хранения даты последнего обновления
+last_update_date = None
 
 
 @app.route('/')
@@ -27,8 +30,18 @@ def horoscope():
 
 @app.route('/tarot/')
 def tarot():
+    global last_update_date
+
+    # Проверяем, нужно ли обновлять словарь tarot_by_month
+    current_date = datetime.datetime.now()
+    if last_update_date is None or (current_date.weekday() == 0 and current_date.date() > last_update_date.date()):
+        update_tarot_predictions()
+        # Обновляем дату последнего обновления
+        last_update_date = current_date
+
     sign = request.args.get('sign')
     tarot_output = divination_by_tarot(sign)
+
     card_name_1 = tarot_output[0]['name']
     card_name_2 = tarot_output[1]['name']
     card_name_3 = tarot_output[2]['name']
@@ -38,6 +51,7 @@ def tarot():
     card_interpretation_1 = tarot_output[0]['interpretation']
     card_interpretation_2 = tarot_output[1]['interpretation']
     card_interpretation_3 = tarot_output[2]['interpretation']
+
     return render_template("tarot.html", card_name_1=card_name_1, card_name_2=card_name_2, card_name_3=card_name_3,
                            card_image_1=card_image_1, card_image_2=card_image_2, card_image_3=card_image_3,
                            card_interpretation_1=card_interpretation_1, card_interpretation_2=card_interpretation_2,
