@@ -20,6 +20,11 @@ btn_planet.addEventListener("click", () => {
     location.href += `planet/?sign=${sign}`
 });
 
+btn_numerology.addEventListener("click", () => {
+    date = new Date(data.value);
+    location.href += `numerology/?date=${date}`
+})
+
 btn_tarot.addEventListener("click", () => {
     definitionSign();
     location.href += `tarot/?sign=${sign}`
