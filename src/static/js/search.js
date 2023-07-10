@@ -22,7 +22,12 @@ btn_planet.addEventListener("click", () => {
 
 btn_numerology.addEventListener("click", () => {
     date = new Date(data.value);
-    location.href += `numerology/?date=${date}`
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    newDate = `${day}${month}${year}`
+    console.log(newDate)
+    location.href += `numerology/?date=${newDate}`
 })
 
 btn_tarot.addEventListener("click", () => {

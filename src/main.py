@@ -70,5 +70,11 @@ def planet():
     return render_template("planet.html")
 
 
+@app.route('/numerology/')
+def numerology():
+    date = request.args.get('date')
+    return render_template("numerology.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)
