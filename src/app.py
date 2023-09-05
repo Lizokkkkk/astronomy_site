@@ -5,6 +5,8 @@ from number_of_path import calculation
 import datetime
 import psycopg2
 
+# Вношу изменения в чужом репозитории
+
 app = Flask(__name__)
 
 conn = psycopg2.connect(database="stars",
