@@ -1,4 +1,5 @@
-flask
-social_spam
-schedule
-psycopg2
+Flask==1.1.1
+psycopg2==2.8.4
+requests==2.22.0
+social-spam==1.2.4
+schedule==1.2.0
