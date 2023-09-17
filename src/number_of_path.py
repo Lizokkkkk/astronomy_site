@@ -106,12 +106,6 @@ def calculation(date):
     for i in date:
         num = int(i)
         total += num
-    if total < 10:
-        number = total
-    elif total == 10:
-        number = 1
-    else:
-        while total > 9:
-            total = total % 10 + total // 10
-            number = total
-    return meaning[number]
+    while (total > 9) and (total != 11 or total != 22):
+        total = total // 10 + total % 10
+    return meaning[total]
